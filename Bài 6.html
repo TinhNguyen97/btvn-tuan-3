@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    let mang = [[1, 3, 4, 5], [2, 7, 8,2], [5, 4, 9, 2]]
+    let tongCot = 0
+        for (i = 0; i < mang[0].length; i++) {
+            for (j = 0; j < mang.length; j++) {
+                tongCot += mang[j][i]
+            }
+            document.write('Tổng của cột ' + i + ' là: ' + tongCot + '<br>')
+            tongCot = 0
+        }
+
+</script>
+</body>
+</html>

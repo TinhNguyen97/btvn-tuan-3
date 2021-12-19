@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("Nhập số cần tìm:"))
+    let mang = [12, 24, 10, 2, 7, 56, 42, 31, 72, 68]
+    let index=-1
+    for (i=0;i<mang.length;i++)
+    {
+        if(a==mang[i])
+        {
+            index=i
+        }
+    }
+    if(index==-1)
+    {
+        alert('Không có trong mảng')
+    }
+    else
+        alert('Phần tử '+a+'có vị trí '+index)
+</script>
+</body>
+</html>

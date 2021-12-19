@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4.4</title>
+</head>
+<body>
+<script>
+    let arrs = [
+        [5, 2, 3],
+        [4, 14, 6],
+        [7, 23, 9],
+        [10, 71, 12],
+        [32, 40, 15]
+    ];
+    let max;
+    let length_Col = arrs[0].length;
+    for (let i = 0 ; i < length_Col ; i++) {
+        max = arrs[0][i];
+        for (let j = 0 ; j < arrs.length; j++) {
+            if (max < arrs[j][i]) {
+                max = arrs[j][i];
+            }
+        }
+        document.write("Giá trị lớn nhất của cột  " + i + " là: " + max + "<br>");
+    }
+</script>
+</body>
+</html>
